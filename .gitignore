@@ -1,0 +1,49 @@
+# Build
+bin/
+obj/
+/out/
+*.user
+*.userosscache
+*.suo
+*.cache
+*.pdb
+*.mdb
+*.dbmdl
+*.bak
+
+# VS/VS Code
+.vs/
+.vscode/
+
+# Rider
+.idea/
+
+# Logs
+*.log
+logs/
+
+# Coverage
+coverage/
+*.coverage
+*.coveragexml
+TestResults/
+
+# Packages
+*.nupkg
+*.snupkg
+packages/
+
+# Publish output
+artifacts/
+wwwroot/
+
+# EF Core
+Migrations/[*]_*.Designer.cs
+
+# OS junk
+Thumbs.db
+*.DS_Store
+
+# Secrets (keep your own)
+appsettings.*.local.json
+
