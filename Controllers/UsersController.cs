@@ -2,9 +2,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using API.Data;
 using API.Entities;
+// adding authentication to the controller
+using Microsoft.AspNetCore.Authorization;
 
 namespace API.Controllers;
 
+[Authorize]
 public class UsersController : BaseApiController
 {
     private readonly DataContext _context;
@@ -15,6 +18,7 @@ public class UsersController : BaseApiController
     }
 
     // GET: api/users
+   // [AllowAnonymous]
     [HttpGet]
     public async Task<ActionResult<IEnumerable<appUser>>> GetUsers()
     {
